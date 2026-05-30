@@ -1,50 +1,53 @@
-# Welcome to your Expo app 👋
+﻿# VocabBridge
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+VocabBridge is an Expo-based React Native app skeleton built with Expo Router. It currently includes a simple home screen and an explore screen, and is ready for vocabulary-focused UI and Firebase integration.
 
-## Get started
+## Project overview
+
+- pp/ contains Expo Router pages and root navigation
+- pp/index.jsx is the home screen route
+- pp/explore.jsx is the explore screen route
+- pp/\_layout.jsx defines the stack navigation
+- screens/, components/, services/, store/, constants/, and utils/ are available for app logic and structure
+- Firebase is installed and ready to connect when you add backend features
+
+## Getting started
 
 1. Install dependencies
 
-   ```bash
-   npm install
-   ```
+   `ash
+npm install
+`
 
-2. Start the app
+2. Start the development server
 
-   ```bash
-   npx expo start
-   ```
+   `ash
+npx expo start
+`
 
-In the output, you'll find options to open the app in a
+3. Choose a platform from the Expo CLI menu:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+-  to open Android
+- i to open iOS
+- w to open web
+- q to quit
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Useful scripts
 
-## Get a fresh project
+- pm start — start Expo development server
+- pm run android — run on Android device/emulator
+- pm run ios — run on iOS simulator/device
+- pm run web — open the web version
+- pm run lint — run ESLint
 
-When you're ready, run:
+## Next steps
 
-```bash
-npm run reset-project
-```
+- Edit pp/index.jsx and pp/explore.jsx to add app content
+- Implement vocabulary lessons, word lists, and quizzes
+- Connect irebase in services/api.js for data persistence
+- Add UI components in components/
+- Store app state in store/
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Notes
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is currently a starter template. The screens are placeholders, so update them with your own app logic and branding as you build VocabBridge.
