@@ -38,6 +38,11 @@ yarn-error.*
 
 app-example
 
-# generated native folders
-/ios
-/android
+# Android
+android/.gradle/
+android/app/build/
+
+# iOS
+ios/build/
+
+node_modules/
